@@ -1,0 +1,23 @@
+<Project>
+    <PropertyGroup>
+        <Copyright>TBD</Copyright>
+        <Authors>TBD</Authors>
+        <PackageProjectUrl>TBD</PackageProjectUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageIcon>logo.png</PackageIcon>
+        <Version>0.0.1</Version>
+        <PackageTags>TBD</PackageTags>
+        <NoWarn>$(NoWarn);CS1591;NU1701;CA1707;</NoWarn>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+    <PropertyGroup Label="Build">
+        <LangVersion>latest</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+    <ItemGroup>
+        <None Include="$(MSBuildThisFileDirectory)../docs/logo.png" Pack="true" Visible="false" PackagePath="\"/>
+        <None Include="$(MSBuildThisFileDirectory)../README.md" Pack="true" Visible="false" PackagePath="\"/>
+    </ItemGroup>
+</Project>

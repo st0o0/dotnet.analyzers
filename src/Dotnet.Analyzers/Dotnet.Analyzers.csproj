@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <IsPackable>true</IsPackable>
+        <IsRoslynComponent>true</IsRoslynComponent>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <PackageId>Dotnet.Analyzers</PackageId>
+        <Title>Dotnet Analyzers</Title>
+        <Description>Roslyn Analyzer für .NET Projekte</Description>
+        <PackageTags>roslyn analyzer csharp dotnet</PackageTags>
+        <RepositoryUrl>https://github.com/st0o0/dotnet.analyzers</RepositoryUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageIcon>logo.png</PackageIcon>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="../../README.md" Pack="true" Visible="false" PackagePath="/"/>
+        <None Include="../../docs/logo.png" Pack="true" Visible="false" PackagePath="/"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.CodeAnalysis"/>
+    </ItemGroup>
+</Project>

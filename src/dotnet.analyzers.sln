@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29230.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B5DF032D-4C5E-4E6B-B6B1-F83A599FE329}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+		..\LICENSE = ..\LICENSE
+		..\.github\workflows\build-and-release.yml = ..\.github\workflows\build-and-release.yml
+		global.json = global.json
+		..\.gitversion.yml = ..\.gitversion.yml
+		Directory.Packages.props = Directory.Packages.props
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnet.Analyzers", "Dotnet.Analyzers\Dotnet.Analyzers.csproj", "{A21799E8-561F-4A18-82C5-09A0E632D116}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnet.Analyzers.Tests", "Dotnet.Analyzers.Tests\Dotnet.Analyzers.Tests.csproj", "{E3F4BC6E-CEF3-4046-9804-B703B4264A90}"
+EndProject
+
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C9E01EFA-6F6C-4C8F-978E-3AEE878DED69}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A21799E8-561F-4A18-82C5-09A0E632D116}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A21799E8-561F-4A18-82C5-09A0E632D116}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A21799E8-561F-4A18-82C5-09A0E632D116}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A21799E8-561F-4A18-82C5-09A0E632D116}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3F4BC6E-CEF3-4046-9804-B703B4264A90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3F4BC6E-CEF3-4046-9804-B703B4264A90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3F4BC6E-CEF3-4046-9804-B703B4264A90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3F4BC6E-CEF3-4046-9804-B703B4264A90}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

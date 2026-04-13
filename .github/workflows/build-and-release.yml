@@ -121,7 +121,7 @@ jobs:
           dotnet nuget push --api-key ${{ secrets.NUGET_API_KEY }} --source https://api.nuget.org/v3/index.json --skip-duplicate ${{ env.PACKAGE_OUTPUT_DIRECTORY }}/*.nupkg
 
       - name: Create & Publish Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: "v${{ needs.build.outputs.semVer }}"
           target_commitish: ${{ github.sha }}
